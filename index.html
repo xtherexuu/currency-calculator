@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="alternativeBoxModel.css">
+    <link rel="stylesheet" href="backgroundVideo.css">
+    <link rel="stylesheet" href="sectionElements.css">
+    <link rel="stylesheet" href="headerElements.css">
+    <script defer src="scripts.js"></script>
+    <title>Kalkulator Walut</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__h1">Kalkulator walut</h1>
+    </header>
+    <video class="body__videoBackground" src="elo.mp4" muted loop autoplay></video>
+    <section class="section">
+        <h2 class="section__h2">Przelicz walutę</h2>
+        <form class="section__form js-form">
+            <fieldset class="section__fieldset">
+                <legend class="section__legend">Przelicznik</legend>
+                <p>
+                    <label class="section__label">
+                        Wybierz walutę z: <select class="section__select js-fromCurrency">
+                            <option selected>PLN</option>
+                            <option>EUR</option>
+                            <option>USD</option>
+                            <option>GBP</option>
+                        </select>
+                        Na : <select class="section__select js-toCurrency">
+                            <option>PLN</option>
+                            <option selected>EUR</option>
+                            <option>USD</option>
+                            <option>GBP</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label class="section__label">
+                        Ilość: <input required type="number" class="section__input js-amount" name="amount" min="0.01"
+                            step="0.01">
+                    </label>
+                </p>
+                <p>Kurs aktualny w dniu: 24.09.2022</p>
+            </fieldset>
+            <p><button class="section__button">Przelicz</button></p>
+        </form>
+        <p>Po przeliczenniu otrzymasz: <strong class="section__strong js-resoult"></strong></p>
+    </section>
+</body>
+
+</html>

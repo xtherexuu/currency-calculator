@@ -1,0 +1,54 @@
+.section {
+    background-color: white;
+    width: 80%;
+    /* margin: 0 auto; */
+    z-index: 10;
+    opacity: 0.95;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 70px 30px;
+    margin-top: 39.5px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 55px 26px rgba(232, 92, 255, 1);
+}
+
+.section__h2 {
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 4px;
+    border-bottom: 3px solid purple;
+    padding-bottom: 10px;
+    margin: 0 10% 20px;
+}
+
+.section__fieldset {
+    border: 2px solid purple;
+    border-radius: 15px;
+}
+
+.section__legend {
+    background-color: rgb(240, 175, 240);
+    padding: 7px;
+    border-radius: 15px;
+}
+
+.section__button {
+    background-color: rgb(240, 175, 240);
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.section__button:hover {
+    background-color: rgb(240, 196, 240);
+}
+
+.section__input {
+    border: 1px solid purple;
+}
+
+.section__select {
+    border: 1px solid purple;
+}
