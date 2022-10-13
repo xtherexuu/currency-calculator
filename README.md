@@ -4,7 +4,7 @@
 
 # Preview
 
-
+![Preview](files/previewCurrencyCalc.gif)
 
 # Description
 
