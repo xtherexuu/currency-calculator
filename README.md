@@ -14,7 +14,7 @@ This is simple currency calculator which will allow you to do simple calculation
 - GPB
 - USD
 
-Last coure update is's from 24.09.2022
+Last coure update is's from 16.10.2022
 
 # Technologies
 - HTML
