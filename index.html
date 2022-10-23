@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/backgroundVideo.css" />
         <link rel="stylesheet" href="css/sectionElements.css" />
         <link rel="stylesheet" href="css/headerElements.css" />
+        <link rel="stylesheet" href="css/main.css" />
         <meta property="og:title" content="Currency Calculator" />
         <meta property="og:description" content="It's simple currency calculator." />
         <meta property="og:image" content="files/shareimage.png" />
@@ -25,42 +26,43 @@
             <h1 class="header__heading">Kalkulator walut</h1>
         </header>
         <video class="body__videoBackground" src="files/elo.mp4" muted loop autoplay></video>
-        <section class="section">
-            <h2 class="section__subheader">Przelicz walutę</h2>
-            <form class="section__form js-form">
-                <fieldset class="section__fieldset">
-                    <legend class="section__legend">Przelicznik</legend>
-                    <p>
-                        <label class="section__label">
-                            Wybierz walutę z:
-                            <select class="section__select js-inputCurrency">
-                                <option selected>PLN</option>
-                                <option>EUR</option>
-                                <option>USD</option>
-                                <option>GBP</option>
-                            </select>
-                            Na :
-                            <select class="section__select js-outputCurrency">
-                                <option>PLN</option>
-                                <option selected>EUR</option>
-                                <option>USD</option>
-                                <option>GBP</option>
-                            </select>
-                        </label>
-                    </p>
-                    <p>
-                        <label class="section__label">
-                            Ilość:
-                            <input required type="number" class="section__input js-amount" name="amount" min="0.01" step="0.01" />
-                        </label>
-                    </p>
-                    <p>Kurs aktualny w dniu: 16.10.2022</p>
-                </fieldset>
-                <p><button class="section__button">Przelicz</button></p>
-            </form>
-            <p class="section__paragraph">Po przeliczenniu otrzymasz: <strong class="section__strong js-resoult"></strong></p>
-            <br />
-            <p class="section__paragraph section__paragraph--explain"><strong class="js-explanationResoult"></strong></p>
-        </section>
+        <div class="div">
+            <section class="section">
+                <h2 class="section__subheader">Przelicz walutę</h2>
+                <form class="section__form js-form">
+                    <fieldset class="section__fieldset">
+                        <legend class="section__legend">Przelicznik</legend>
+                        <p>
+                            <label class="section__label">
+                                Wybierz walutę z:
+                                <select class="section__select js-inputCurrency">
+                                    <option selected>PLN</option>
+                                    <option>EUR</option>
+                                    <option>USD</option>
+                                    <option>GBP</option>
+                                </select>
+                                Na :
+                                <select class="section__select js-outputCurrency">
+                                    <option>PLN</option>
+                                    <option selected>EUR</option>
+                                    <option>USD</option>
+                                    <option>GBP</option>
+                                </select>
+                            </label>
+                        </p>
+                        <p>
+                            <label class="section__label">
+                                Ilość:
+                                <input required type="number" class="section__input js-amount" name="amount" min="0.01" step="0.01" />
+                            </label>
+                        </p>
+                        <p>Kurs aktualny w dniu: 16.10.2022</p>
+                    </fieldset>
+                    <p><button class="section__button">Przelicz</button></p>
+                </form>
+                <p class="section__paragraph">Po przeliczenniu otrzymasz: <strong class="section__strong js-resoult"></strong></p>
+                <p class="section__paragraph section__paragraph--explain"><strong class="js-explanationResoult"></strong></p>
+            </section>
+        </div>
     </body>
 </html>
