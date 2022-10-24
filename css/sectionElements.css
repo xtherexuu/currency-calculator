@@ -3,7 +3,7 @@
     width: 80%;
     z-index: 10;
     opacity: 0.95;
-    padding: 70px 30px;
+    padding: 70px 30px 0;
     border-radius: 15px;
     box-shadow: 0px 0px 55px 26px rgba(232, 92, 255, 1);
     min-height: 544px;
